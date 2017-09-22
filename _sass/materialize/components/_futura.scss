@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "FuturaLTPro";
+    src: local(Futura LT Pro Book),
+        url("#{$futura-font-path}FuturaLTPro-Book.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "FuturaLTPro";
+    src: local(Futura LT Pro Medium),
+        url("#{$futura-font-path}FuturaLTPro-Medium.otf") format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "FuturaLTPro";
+    src: local(Futura LT Pro Heavy),
+        url("#{$futura-font-path}FuturaLTPro-Heavy.otf") format("opentype");
+    font-weight:700
+}

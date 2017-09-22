@@ -65,3 +65,68 @@ h1.page-title {
 p.rss-subscribe {
     margin: 0;
 }
+
+.bar {
+    border-top: 5px solid #fd6225;
+    width:50px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom: 2.5%;
+    z-index: 1;
+}
+
+.news-overlay {
+    position: relative;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+.logo-overlay {
+    position:absolute;
+    z-index:1;
+    bottom: 0;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.5;
+}
+
+#mce-EMAIL {
+    display: inline-block; 
+    width:70%;
+    background-color: white;
+    height: 4rem;
+    color: #7d7d7d;
+    padding-left:10px
+}
+
+input#mce-EMAIL:placeholder-shown{
+    padding-left: 10px
+}
+
+input#mce-EMAIL::placeholder {
+    color: #7d7d7d;
+}
+
+input#mc-embedded-subscribe.button {
+    background-color: black;
+    border: 1px white solid;
+    height: 4rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.overlay {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    display: inline;
+    z-index: 1;
+    width:100%;
+    top: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
