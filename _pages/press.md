@@ -6,7 +6,7 @@ order: 3
 permalink: /press/
 ---
 <div class="section">
-    <h2 class="center-align"><div class="bar">
+    <h2 class="center-align"><div class="centerbar">
     </div> Press Center</h2>
     <p class="center-align">For All media inquires contact <a href="mailto:pr@innit.com">pr@innit.com</a></p>
   </div>
