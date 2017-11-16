@@ -11,7 +11,9 @@
   vertical-align: middle;
   // Gets rid of tap active state
   -webkit-tap-highlight-color: transparent;
-}
+  font-weight: 700;
+  border: 2px solid #4cb935;
+  }
 
 // Disabled shared style
 .btn.disabled,
@@ -64,16 +66,15 @@
 .btn {
   text-decoration: none;
   color: $button-raised-color;
-  background-color: $button-raised-background;
+  background-color: #4cb935;
   text-align: center;
-  letter-spacing: .5px;
-  @extend .z-depth-1;
+  letter-spacing: 1px;
   transition: .2s ease-out;
   cursor: pointer;
 
   &:hover {
     background-color: $button-raised-background-hover;
-    @extend .z-depth-1-half;
+    border-color: #165416;
   }
 }
 
@@ -81,7 +82,6 @@
 .btn-floating {
   &:hover {
     background-color: $button-floating-background-hover;
-    @extend .z-depth-1-half;
   }
 
   &:before {

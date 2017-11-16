@@ -1,81 +1,337 @@
 ---
 layout: default
 ---
-<div class="slider">
-    <ul class="slides">
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">{{ site.title }}</h1>
-      <div class="divider"></div>
-      <div class="row">
-      <div class="col s5 offset-s1 left-align">
-        <h4>Revolutionize <br>
-        the Way You Eat</h4>
-        <h6>The free Innit app makes meal planning, shopping, <br>
-        preparing and cooking fast, fun, and healthy</h6>
-        <a href="#" id="download-button" class="btn-large waves-effect waves-light orange">Download FREE App</a>
-      </div>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-<div class="divider"></div>
-  <div class="container">
+<!-- Hero Section Desktop -->
+<div class="row hide-on-small-only" style="position: relative;">
+   <video id="hero-video" muted poster="{{ site.url }}/assets/images/homepage/homepage-hero.png">
+    <source src="{{ site.url }}/assets/video/big_buck_bunny.mp4" type="video/mp4">
+  </video>
+  <div class="hero-text" style="position: absolute;top:40%; margin-left: calc(100% / 12);transform: translateY(-50%);max-width: 380px;width:calc(100% / 12 * 5); color: #f2f2f2;z-index: 3">
     <div class="section">
-      <div class="row">
-        <div class="col s5 offset-s6 right-align">
-          <h4>Personalized<br> to You</h4>
-          <h6>Innit helps you cook entrie meals that are <br>automatically personalized to your likes and <br>needs. Our quick quiz and smart technology <br> personalizes recipes for you.
-        </div>
-
+      <div class="leftbar">
       </div>
-
+      <h1 style="margin-top: 10px; margin-bottom: 0px;">Enjoy The Way<br>You Eat</h1>
+      <h2 class="hero-body">We make meal planning, shopping, preparing, and cooking, fast, easy, and delicious.</h2>
+      <div class="buttonholder" style="white-space: nowrap;">
+        <a class="waves-effect waves-light btn-large" style="display:inline-block;margin-right: 5px;">Download Free App</a>
+        <a class="waves-effect waves-light btn-large inverse" style="display: inline-block;">Watch Video</a>
+      </div>
     </div>
-<div class="divider"></div>
-  <div class="container">
-    <div class="section">
-      <div class="row">
-        <div class="col s5 offset-s1 left-align">
-          <h4>Personalized<br> to You</h4>
-          <h6>Innit helps you cook entrie meals that are <br>automatically personalized to your likes and <br>needs. Our quick quiz and smart technology <br> personalizes recipes for you.</h6>
-        </div>
   </div>
-
+</div>
+<!-- Hero Section Mobile -->
+<div class="flexrow hide-on-med-and-up">
+  <div class="mobilehero">
+    <img src="{{ site.url }}/assets/images/homepage/homepage-hero-mobile.jpg" style="width: 100%">
+  </div>
+  <div class="marginspacer">
+    <div class="" style="padding-left: calc(100% / 12);padding-right: calc(100% / 12)">
+      <div class="leftbar">
       </div>
-
+      <h1 style="margin-top: 10px;">Enjoy The Way <br> You Eat</h1>
+      <h2 class="hero-body">We make meal planning, shopping, preparing, and cooking, fast, easy, and delicious.</h2>
+      <div class="buttonholdermobile" style="white-space: wrap;text-align: center;margin-bottom: 50px;">
+        <a class="waves-effect waves-light btn-large" style="display:inline-block;width: 100%;max-width: 400px;">Download Free App</a>
+        <div class="buttonpadding" style="margin-top: 10px;"></div>
+        <a class="waves-effect waves-light btn-large inverse" style="display: inline-block;width: 100% ;max-width: 400px;">Watch Video</a>
+      </div>
     </div>
+  </div>
+</div>
+<!-- Half Section for News -->
+<!--
+<div class="row" style="background-color: #dadada;">
+  <div class="col s6 m5 offset-m1">
+    <img src="{{ site.url }}/assets/images/team/headshot_placeholder.png" style="width:50%;">
+  </div>
+  <div class="col s6">
+    <h2>Tyler Florence Joins The Innit Team</h2>
+    <p>The Top Chef is now our Chief Content and Innovation Officer. Tyler and our culinary team are designing meals that work for everday with flavors you'll love.</p>
+  </div>
+</div> -->
+<!-- Normal Section Picture Right-->
+<div id="topmarginspacer">
+<div class="flexrowtextleft">
+  <div class="textspacer">
+    <div  class="flextextleft">
+    <h4 class="subheader">Meals just for you</h4>
+    <h3>Personalized To You</h3>
+    <p class="body">We help you cook meals that are personalized to your likes and needs. If you're a vegetarian you won't see meat. If you're allergic to nuts, you won't see them. Simply build a meal or choose one recommended just for you.</p>
     </div>
+  </div>
+  <div class="flexphotoright">
+    <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-personalize-1.jpg">
+  </div>
+</div>
+</div>
+<!-- Normal Section Picture Left-->
+<div class="marginspacer">
+  <div class="flexrowtextright">
+    <div class="flexphotoleft">
+      <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/hompage-confidence.jpg">
     </div>
+    <div class="textspacer">
+      <div class="flextextright">
+        <h4 class="subheader">Everything ready at once</h4>
+        <h3>Cook With Confidence</h3>
+        <p class="body">We handle the challenges that stand between you and making food at home. Our guided cooking system shows you what to do so you can cook with confidence and have all parts of your meal ready at the same time.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Normal Section Picture Right-->
+<div class="marginspacer">
+  <div class="flexrowtextleft">
+    <div class="textspacer">
+      <div class="flextextleft">
+        <h4 class="subheader">Change Meals with a Tap</h4>
+        <h3 style="overflow: visible;">Mix And Match To Customize</h3>
+        <p class="body" style="width: 290px;">Modify any meal with a tap to instantly change the protein, starch, vegetable, or sauce to fit your cravings or what's in your fridge. The cooking instructions to step-by-step videos automatically update.</p>   
+      </div>
+    </div>
+    <div class="flexphotoright">
+       <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-customize.jpg">
+    </div>
+  </div>
+</div>
+<!-- Normal Section Picture Left-->
+<div class="marginspacer">
+  <div class="flexrowtextright">
+    <div class="flexphotoleft">
+       <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-hurry-3.jpg">
+    </div>
+    <div class="textspacer">
+      <div class="flextextright">
+        <h4 class="subheader">Meals Have Few Steps</h4>
+        <h3>In A Hurry? <br> We Make It Fast</h3>
+        <p class="body">We know you're busy. So, we've made it fast.</p>
+        <ul class="normallist">
+          <li>
+            Get everyday dinner inspiration
+          </li>
+          <li>
+            Tap for a time-saving shopping list
+          </li>
+          <li>
+            Enjoy entire meals rather than just one dish
+          </li>
+          <li>
+            Meals have a small number of steps
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Single Long Section Desktop -->
+<div class="marginspacer hide-on-small-only">
+  <div class="row">
+    <div class="col s12 m10 offset-m1">
+      <h4 class="subheader">All-In-One Platform</h4>
+      <h3>From Planning To Cooking All in One Place</h3>
+      <table>
+        <tr>
+          <td>
+            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-plan.jpg">
+          </td>
+          <td>
+            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-shop.jpg">
+          </td>
+          <td>
+            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-prep.jpg">
+          </td>
+          <td>
+            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/hompage-cook.jpg">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h5 style="color: #FD6224;">Planning</h5>
+            <p class="body2">Plan a personalized meal for the moment or for the week.</p>
+          </td>
+          <td>
+            <h5 style="color: #FD6224;">Shopping</h5>
+            <p class="body2">Create shopping lists based on your meals and your lifestyle.</p>
+          </td>
+          <td>
+            <h5 style="color: #FD6224;">Preparing</h5>
+            <p class="body2">Get step-by-step guidance improve your skills.</p>
+          </td>
+          <td>
+            <h5 style="color: #FD6224;">Cooking</h5>
+            <p class="body2">Make delicious everyday meals that are ready when you are.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Single Long Section Mobile -->
+<div class="marginspacer hide-on-med-and-up">
+  <div class="row">
+    <div class="col s10 m10 offset-s1">
+      <h4 class="subheader">All-In-One Platform</h4>
+      <h3>From Planning To Cooking All in One Place</h3>
+      <table>
+        <tr>
+          <td>
+            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-plan.jpg">
+          </td>
+          <td>
+            <h5 style="color: #FD6224;">Planning</h5>
+            <p class="body2">Plan a personalized meal for the moment or for the week.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-shop.jpg">
+          </td>
+          <td>
+            <h5 style="color: #FD6224;">Shopping</h5>
+            <p class="body2">Create shopping lists based on your meals and your lifestyle.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-prep.jpg">
+          </td>
+          <td>
+            <h5 style="color: #FD6224;">Preparing</h5>
+            <p class="body2">Get step-by-step guidance improve your skills.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/hompage-cook.jpg">
+          </td>
+          <td>
+            <h5 style="color: #FD6224;">Cooking</h5>
+            <p class="body2">Make delicious everyday meals that are ready when you are.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Highlight Section Picture Right-->
+<div class="marginspacer" style="background-color: #e8eff0;">
+  <div class="flexrowtextleft">
+    <div class="textspacer" style="margin-top: 0px;">
+      <div class="flextextleft" id="highlightsection">
+      <h4 class="subheader">Make Delicious Dinners</h4>
+      <h3>Amazing Team</h3>
+      <p class="body">Our meals are designed to be delicious with amazing flavor. Top Chef, Tyler Florence, is our Chief Content and Innovation Officer. Tyler and our culinary team have designed meals that work for everyday with flavors you'll love.</p>
+      </div>
+    </div>
+    <div class="flexphotoright" id="highlightphoto">
+     <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-tyler.jpg">
+    </div>
+  </div>
+</div>
+<!-- Partner Section: Picture Left, Logo Bottom -->
+<div class="marginspacer">
+  <div class="flexrowtextright">
+    <div class="flexphotoleft">
+       <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-appliances.jpg">
+    </div>
+    <div class="textspacer">
+      <div class="flextextright">
+        <h4 class="subheader">Connecting The Smart Kitchen</h4>
+        <h3>Connect With Your Smart Appliances</h3>
+        <p class="body">We work with both connected and non-connected kitchens. For those with smart appliances, our guided cooking system allows you to achieve optimal results every time. We vary the oven temperature to perfectly cook the meal, provide helpful notifications throughout the cooking process, cook food faster, and tell you when your meal is ready.</p>
+        <div class="logoholder" style="margin-right: auto;margin-left: auto; height: 40px;">
+          <nobr>
+            <img src="{{ site.url }}/assets/images/homepage/partner-logos-bosch.svg" style="height: 35px;margin-bottom: -3px;">
+            <img src="{{ site.url }}/assets/images/homepage/partner-logos-chefd.svg" style="height: 25px;">
+            <img src="{{ site.url }}/assets/images/homepage/partner-logos-GE.svg" style="height: 35px;">
+            <img src="{{ site.url }}/assets/images/homepage/partner-logos-perfect.svg" style="height: 25px;">
+         </nobr>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+<!-- News Section Slider: 2 Panels -->
+<div class="marginspacer">
+<div class="containertest">
+  <div class="row">
+    <div class="carousel carousel-slider center" data-indicators="true">
+    <div class="carousel-fixed-item center">
+      <!--
+      <a style="float: right; margin-right: calc(100% / 12);border-color: transparent;" class="waves-effect waves-teal btn-flat">more new about innit<div style="height:2px;background-color:#4cb935;position:absolute;bottom:0;opacity:0.2;width: 161px;"></div></a>
+    -->
+    </div>
+    <div class="carousel-item white-text" href="#one!" style="background-color: #f2ece3;">
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 35px 0px 30px 25px;">Innit In The News</h2>
+      <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
+        <tr>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;width: 33%;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-1].title }}</p>
+          </td>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;width: 33%;"> 
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-2].title }}</p>
+          </td>
+          <td style="padding: 0px 25px;table-layout: fixed;vertical-align: top; width: 33%;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-3].title }}</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%;min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-1].logo }}" style="width:100%;">
+            </div>
+          </td>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%; min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-2].logo }}" style="width:100%; min-width: 70px;">
+            </div>
+          </td>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%; min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-3].logo }}" style="width:100%: min-width: 70px;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="carousel-item white-text" href="#two!" style="background-color: #f2ece3;">
+      <h2>Second Panel</h2>
+      <p class="white-text">This is your second panel</p>
+    </div>
+  </div>
+  </div>      
+</div>
+</div>
+<!-- Bottom CTA: Scrolling Pages -->
+<div class="marginspacer">
+  <div class="row no-pad-bot">
+    <div class="col s10 m10 offset-s1 offset-m1">
+      <h4 class="subheader">Love Your Dinner</h4>
+      <h3>Let Us Be Your Answer To "What's for Dinner?"</h3>
+      <p class="body">Many of our easy everday meals go from start to finish in about 30 minutes.</p>
+      <a class="waves-effect waves-light btn-large hide-on-small-only">Download Free App</a>
+    </div>
+    <div id="containertest">    
+      <div class="photobanner">
+        <img class="first scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-SpicyLimeBasil_UY0A0067.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-ItalianSunDriedTomato_UY0A0145.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-SpicyLimeBasil_UY0A0067.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-ItalianSunDriedTomato_UY0A0145.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
+        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
+      </div>
+    </div>
+    <div class="col s12 m10 offset-m1 hide-on-med-and-up" style="text-align: center;">
+      <div class="marginspacer">
+        <a class="waves-effect waves-light btn-large" style="display: inline-block;width: 90%;max-width: 400px;">Download Free App</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,7 +7,7 @@ permalink: /career/
 <div class="row">
 	<div class="col s12">
 		<div class="bar-center">
-			<h2 class="center-align"> Join Our Team </h2>
+			<h2 class="center-align">Join Our Team </h2>
 		</div>
 </div>
 

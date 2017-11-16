@@ -24,23 +24,19 @@
       left: 0;
 
       h2 {
-        font-size: 24px;
         font-weight: 500;
-        line-height: 32px;
       }
 
       p {
-        font-size: 15px;
       }
     }
   }
 
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 100% !important;
   height: $carousel-height;
-  perspective: 500px;
-  transform-style: preserve-3d;
+  transform-style: flat;
   transform-origin: 0% 50%;
 
   .carousel-item {
@@ -66,19 +62,20 @@
 
     .indicator-item {
       &.active {
-        background-color: #fff;
+        background-color: #4cb935;
       }
 
       display: inline-block;
       position: relative;
       cursor: pointer;
-      height: 8px;
-      width: 8px;
-      margin: 24px 4px;
-      background-color: rgba(255,255,255,.5);
+      height: 12px;
+      width: 12px;
+      margin: 24px 6px;
+      background-color: #fff;
 
       transition: background-color .3s;
       border-radius: 50%;
+      border: 1px solid #DADADA
     }
   }
 

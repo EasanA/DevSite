@@ -35,14 +35,14 @@
 // 1. Colors
 // ==========================================================================
 
-$primary-color: color("materialize-red", "lighten-2") !default;
+$primary-color: #2f2f2f !default;
 $primary-color-light: lighten($primary-color, 15%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
 $secondary-color: color("teal", "lighten-1") !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
-$link-color: color("light-blue", "darken-1") !default;
+$link-color: #4cb935 !default;
 
 
 // 2. Badges
@@ -58,11 +58,11 @@ $badge-height: 22px !default;
 // Shared styles
 $button-border: none !default;
 $button-background-focus: lighten($secondary-color, 4%) !default;
-$button-font-size: 1rem !default;
+$button-font-size: .8rem !default;
 $button-icon-font-size: 1.3rem !default;
-$button-height: 36px !default;
-$button-padding: 0 2rem !default;
-$button-radius: 2px !default;
+$button-height: 30px !default;
+$button-padding: 0 1rem !default;
+$button-radius: 3px !default;
 
 // Disabled styles
 $button-disabled-background: #DFDFDF !default;
@@ -70,7 +70,7 @@ $button-disabled-color: #9F9F9F !default;
 
 // Raised buttons
 $button-raised-background: $secondary-color !default;
-$button-raised-background-hover: lighten($button-raised-background, 5%) !default;
+$button-raised-background-hover: #165416 !default;
 $button-raised-color: #fff !default;
 
 // Large buttons
@@ -78,7 +78,7 @@ $button-large-icon-font-size: 1.6rem !default;
 $button-large-height: $button-height * 1.5 !default;
 
 // Flat buttons
-$button-flat-color: #343434 !default;
+$button-flat-color: #4cb935 !default;
 $button-flat-disabled-color: lighten(#999, 10%) !default;
 
 // Floating buttons
@@ -163,7 +163,7 @@ $futura-font-path: "../fonts/futura/";
 // Text Inputs + Textarea
 $input-height: 3rem !default;
 $input-border-color: color("grey", "base") !default;
-$input-border: 1px solid $input-border-color !default;
+$input-border: none !default;
 $input-background: #fff !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
@@ -212,11 +212,11 @@ $switch-radius: 15px !default;
 // ==========================================================================
 
 // Media Query Ranges
-$small-screen-up: 601px !default;
-$medium-screen-up: 993px !default;
+$small-screen-up: 801px !default;
+$medium-screen-up: 1025px !default;
 $large-screen-up: 1201px !default;
-$small-screen: 600px !default;
-$medium-screen: 992px !default;
+$small-screen: 800px !default;
+$medium-screen: 1024px !default;
 $large-screen: 1200px !default;
 
 $medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
@@ -239,20 +239,20 @@ $element-bottom-margin: ($gutter-width*2)/3 !default;
 // 14. Navigation Bar
 // ==========================================================================
 
-$navbar-height: 64px !default;
+$navbar-height: 70px !default;
 $navbar-line-height: $navbar-height !default;
-$navbar-height-mobile: 56px !default;
+$navbar-height-mobile: 70px !default;
 $navbar-line-height-mobile: $navbar-height-mobile !default;
-$navbar-font-size: 1rem !default;
-$navbar-font-color: black !default;
+$navbar-font-size: 0.8rem !default;
+$navbar-font-color: #7c7c7c !default;
 $navbar-brand-font-size: 2.1rem !default;
 
 // 15. Side Navigation
 // ==========================================================================
 
 $sidenav-font-size: 14px !default;
-$sidenav-font-color: rgba(0,0,0,.87) !default;
-$sidenav-bg-color: #fff !default;
+$sidenav-font-color: #fff !default;
+$sidenav-bg-color: #4cb935 !default;
 $sidenav-padding: 16px !default;
 $sidenav-item-height: 48px !default;
 $sidenav-line-height: $sidenav-item-height !default;
@@ -299,23 +299,29 @@ $toast-action-color: #eeff41;
 // 21. Typography
 // ==========================================================================
 
-$off-black: rgba(0, 0, 0, 0.87) !default;
+$off-black: #2f2f2f !default;
 // Header Styles
-$h1-fontsize: 4.2rem !default;
-$h2-fontsize: 3.56rem !default;
-$h3-fontsize: 2.92rem !default;
-$h4-fontsize: 2.28rem !default;
-$h5-fontsize: 1.64rem !default;
+$h1-fontsize: 2.6rem !default;
+$h2-fontsize: 1.2rem !default;
+$h3-fontsize: 1.75rem !default;
+$h4-fontsize: 0.65rem !default;
+$h5-fontsize: 1.6rem !default;
 $h6-fontsize: 1rem !default;
+$h1-fontsize-mobile: 2.5rem !default;
+$h2-fontsize-mobile: 1.2rem !default;
+$h3-fontsize-mobile: 2.095rem !default;
+$h4-fontsize-mobile: 0.952rem !default;
+$h5-fontsize-mobile: 1.5rem !default;
+$h6-fontsize-mobile: 1rem !default;
 
 
 // 22. Footer
 // ==========================================================================
 
-$footer-font-color: #fff !default;
-$footer-bg-color: $primary-color !default;
+$footer-font-color: #4b4b4b !default;
+$footer-bg-color: #f9f9f9 !default;
 $footer-copyright-font-color: rgba(255,255,255,.8) !default;
-$footer-copyright-bg-color: rgba(51,51,51,.08) !default;
+$footer-copyright-bg-color: #f9f9f9 !default;
 
 
 // 23. Flow Text

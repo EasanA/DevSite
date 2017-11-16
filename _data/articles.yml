@@ -1,13 +1,46 @@
-- title: Innit Acquires ShopWell, Plans Platform Launch in 2017
-  blurb: This is a test!
-  date: Sept, 2017
+- title: Innit Acquires ShopWell, Plans Platform Launch in 2017 
+  date: September 29, 2017
   year: 2017
   url: www.google.com 
-  logo: /assets/images/footer/innit-logo-footer.svg
+  logo: /assets/images/dev/image-2.jpg
+  company_name: Red Company
 
 - title: Test Article2
   blurb: This is a test!2
-  date: Sept, 2017
+  date: September 30, 2009
   year: 2017
   url: www.google.com 
-  logo: /assets/images/footer/innit-logo-footer.svg
+  logo: /assets/images/press/logo/quote-businesswire.png
+  company_name: Red Company
+
+- title: Test Article3
+  blurb: This is a test!2
+  date: Sept 21, 2017
+  year: 2017
+  url: www.google.com 
+  logo: /assets/images/dev/image-2.jpg
+  company_name: Red Company
+
+- title: Inside the kitchen that listens to food and cooks by itself
+  blurb: This is a test!2
+  date: Sept 25, 2017
+  year: 2017
+  url: www.google.com 
+  logo: /assets/images/press/logo/quotes-Wired_logo-01.svg
+  company_name: Red Company
+
+- title: Innit wants to make cooking a delicious meal as easy as pushing a button
+  blurb: This is a test!2
+  date: Sept 26, 2017
+  year: 2017
+  url: www.google.com 
+  logo: /assets/images/press/logo/quote-digitaltrends.png
+  company_name: Red Company
+
+- title: Innit launches connected food platform for everyday eating
+  blurb: This is a test!5
+  date: Sept 26, 2017
+  year: 2017
+  url: www.google.com 
+  logo: /assets/images/press/logo/quote-businesswire.png
+  company_name: Red Company

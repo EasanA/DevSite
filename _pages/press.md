@@ -2,78 +2,114 @@
 layout: page
 title: Press
 menu: main
-order: 3
+order: 4
 permalink: /press/
 ---
-<div class="section">
-    <h2 class="center-align"><div class="centerbar">
-    </div> Press Center</h2>
-    <p class="center-align">For All media inquires contact <a href="mailto:pr@innit.com">pr@innit.com</a></p>
+<div class="row">
+  <img class="responsive-img" src="{{ site.url }}/assets/images/sitewide/hero_placeholder.png">
+</div>
+<div class="row">
+  <div class="col s12 m4 l3 offset-m1 offset-l1">
+    <div class="toc-wrapper">
+      <div class="leftbar">
+      </div>
+      <h4>Press Center</h4>
+        <ul class="section table-of-contents">
+          <li><a href="#PressCoverage">Press Coverage</a></li>
+          <li><a href="#PressReleases">Press Releases</a></li>
+          <li><a href="#BrandAssets">Brand Assets</a></li>
+        </ul>
+      <p style="color:#7c7c7c;"> For all media inquires contact <br> <a href="#" style="font-weight: 800;color:#4b4b4b;">pr@innit.com</a></p> 
+    </div>
   </div>
-  <div class="section">
-    <div class="row">
-        <div class="col s12 l4 center-align">
-          <div class="news-overlay">
-            <img class="responsive-img" src="{{ site.url }}/assets/images/press/article-img-placeholder.png">
-            <div class="logo-overlay">
-              <img class="responsive-img" src="{{ site.url }}/assets/images/sitewide/logo_placeholder.png">
-            </div>
-          </div>
-          <h5 class="center-align">News Article Title</h5>
-          <p class="center-align">9/10/2017</p>
-          <div class="divider"></div>
-        </div>
-        <div class="col s12 l4 center-align">
-          <div class="news-overlay">
-            <img class="responsive-img" src="{{ site.url }}/assets/images/press/article-img-placeholder.png">
-            <div class="logo-overlay">
-              <img class="responsive-img" src="{{ site.url }}/assets/images/sitewide/logo_placeholder.png">
-            </div>
-          </div>
-          <h5 class="center-align">News Article Title</h5>
-          <p class="center-align">9/10/2017</p>
-          <div class="divider"></div>
-        </div>
-        <div class="col s12 l4 center-align">
-          <div class="news-overlay">
-            <img class="responsive-img" src="{{ site.url }}/assets/images/press/article-img-placeholder.png">
-            <div class="logo-overlay">
-              <img class="responsive-img" src="{{ site.url }}/assets/images/sitewide/logo_placeholder.png">
-            </div>
-          </div>
-          <h5 class="center-align">News Article Title</h5>
-          <p class="center-align">9/10/2017</p>
-          <div class="divider"></div>
-        </div>
+  <div class="col s12 m6 l7">
+    <div id="PressCoverage" class="section scrollspy">
+      <div class="row">
+        <h5 style="margin-top: 1.1rem;">Press Coverage</h5>
       </div>
-      <h5 class="center-align"><a href="">Load More Articles<br><i class="small material-icons">arrow_forward</i></a></h5>
+      {% for article in site.data.articles %}
+      <div class="col s3" style="padding-left:0px;">
+        <p>{{ article.date }}</p>
+      </div>
+      <div class="col s9">
+        <p style="font-weight:800; font-size:1.5rem; color:#4b4b4b;margin-top:13px; margin-bottom:0px;">{{ article.company_name}}</p>
+          <p style="margin-top:0px; font-size:1.2rem;">{{ article.title }}</p>
+          <p><div style="position:relative;"><a href="{{ article.url}}" style="color:#4cb935;font-weight:700;text-spacing:1px;text-transform:uppercase;font-size:12px;">Read More<div style="height:2px;background-color:#4cb935;position:absolute;bottom:0;opacity:0.2;width:75px;"></div></a></div></p>
+      </div>
+      <div class="col s12" style="border-bottom: 1px solid #DADADA;">
+      </div>
+      {% endfor %}
+      <a class="waves-effect waves-light btn-large">Button</a>
+    </div>
   </div>
-  <div class="section">
-    <div class="row">
-      <div class="col s12 l4 center-align">
+</div>
+<div class="row">
+</div>
+<div class="row">
+</div>
+<div class="row">
+		<div class="col s12 m3 l2 offset-m1 offset-l1 hide-on-small-only">
+  			<div class="toc-wrapper">
+          <div class="leftbar" style="margin-top:5%;">
+          </div>
+  				<h2>Press Center</h2>
+      			<ul class="section table-of-contents">
+        			<li><a href="#PressCoverage">Press Coverage</a></li>
+        			<li><a href="#PressReleases">Press Releases</a></li>
+        			<li><a href="#BrandAssets">Brand Assets</a></li>
+      			</ul>
+      			<p> For all media inquires contact <a href="#">pr@innit.com</a></p> 
+   			</div>
+   		</div>
+    <div class="col s12 m7 l8">
+      <div id="PressCoverage" class="section scrollspy">
         <div class="row">
-        <div class="col s6 push-s3">
-         <img src="{{ site.url }}/assets/images/press/article-img-placeholder.png" alt="" class="circle responsive-img">
-         </div>
-         </div>
-         <h5 class="center-align">Our Executive Team<br><i class="small material-icons">arrow_forward</i></h5>
+          <h5>Press Coverage</h5>
+        </div>
+        {% for article in site.data.articles %}
+        {% if article.year == 2017 %}
+      	<div class="row" style="margin-bottom: 0px; margin-top: 10px;">
+      		<div class="col s8">
+      			<p class="strong">{{ article.logo}}</p>
+        	</div>
+        </div>
+        <div class="row" style="margin-bottom: 0px;">
+        	<div class="col s8">
+        		<p>{{ article.title }}<br>{{ article.date }}</p>
+        	</div>
+        	<div class="col s4">
+            	<p><a href="{{ article.url}}">Read More</a></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+            	{% endif %}
+            {% endfor %}
       </div>
-      <div class="col s12 l4 center-align">
-        <div class="row">
-        <div class="col s6 push-s3">
-         <img src="{{ site.url }}/assets/images/press/article-img-placeholder.png" alt="" class="circle responsive-img">
-         </div>
-         </div>
-         <h5 class="center-align">Brand Assets<br><i class="small material-icons">arrow_forward</i></h5>
+
+
+      <div id="PressReleases" class="section scrollspy">
+      {% for article in site.data.articles %}
+        {% if article.year == 2017 %}
+      	<div class="row" style="margin-bottom: 0px; margin-top: 10px;">
+      		<div class="col s8">
+      			<img height="30" src="{{ site.url }}{{ article.logo}}">
+        	</div>
+        </div>
+        <div class="row" style="margin-bottom: 0px;">
+        	<div class="col s8">
+        		<p>{{ article.title }}<br>{{ article.date }}</p>
+        	</div>
+        	<div class="col s4">
+            	<p><a href="{{ article.url}}">Read More</a></p>
+            </div>
+        </div>
+        <div class="divider"></div>
+            	{% endif %}
+            {% endfor %}
       </div>
-      <div class="col s12 l4 center-align">
-        <div class="row">
-        <div class="col s6 push-s3">
-         <img src="{{ site.url }}/assets/images/press/article-img-placeholder.png" alt="" class="circle responsive-img">
-         </div>
-         </div>
-         <h5 class="center-align">Contact Us<br><i class="small material-icons">arrow_forward</i></h5>
+
+      <div id="initialization" class="section scrollspy">
+      	<p>Content</p>
       </div>
     </div>
   </div>
-

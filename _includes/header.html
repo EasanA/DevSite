@@ -1,31 +1,60 @@
-<nav class="transparent" role="navigation">
+<div class="navbar-fixed">
+  <nav class="white" role="navigation" id="nav-border">
+    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" id="navhamburger">menu</i></a>
     <div class="nav-wrapper container">
       <a id="logo-container" href="/" class="brand-logo">
-           <img src ="{{ site.url }}/assets/images/sitewide/innit_logo-rgb.svg" style="height:30px;"></a>
-      <a class="brand-logo" href="{{ "/" | relative_url }}">
-        <object type="image/svg+xml" data="{{ site.url }}/assets/images/sitewide/innit_logo-white.svg">Your browser does not support SVG</object>
-      </a>
+           <img src ="{{ site.url }}/assets/images/sitewide/innit_logo-rgb.svg" style="height:35px;"></a>
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
 
-          <ul class="right hide-on-med-and-down">
+          <ul class="right">
           {% assign pages = site.pages | sort: 'order' %}
-            {% for page in pages %}
-                {% if page.menu == 'main' %}
-                    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+            {% for p in pages %}
+                {% if p.menu == 'main' %}
+                    <li class="hide-on-med-and-down {% if p.url == page.url %} relative-li active"><div class="activebar"></div> {% else %} "> {% endif %} <a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a></li>
                 {% endif %}
             {% endfor %}
-            <li><a href="">Join Waitlist</a>            
+            <div class="mobile-CTA"><li class="relative-li"><div class="nav-pipes-left"></div><div class="nav-pipes-right"></div><a href="#" class="mobile-CTA-link">Download App</a></li></div>
           </ul>
-
-          <ul id="nav-mobile" class="side-nav">
-            {% for page in site.pages %}
-                {% if page.menu == 'main' %}
-                    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-          </ul>        
-
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-</nav>
+  </nav>
+</div>
+
+  <ul id="nav-mobile" class="side-nav">
+        <li class="relative-li {% if page.url == '/' %} active {% endif %}"><a class="" href="{{ "/" | relative_url }}">Home</a><div class="side-nav-border-bottom"></div></li>
+          {% assign pages = site.pages | sort: 'order' %}
+            {% for p in site.pages %}
+                {% if p.menu == 'main' %}
+                     <li class="relative-li {% if p.url == page.url %} active {% endif %}"><a href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a><div class="side-nav-border-bottom"></div></li>
+                {% endif %}
+              {% endfor %}
+          {% assign p = site.pages %}
+        <li class="relative-li {% if page.url == '/career/' %} active {% endif %}"><a class="" href="{{ "/career/" | relative_url }}">Careers</a><div class="side-nav-border-bottom"></div></li>
+        <li class="relative-li"><a class="" href="{{ "/" | relative_url }}">Download App</a><div class="side-nav-border-bottom"></div></li>
+        <li class="socialicon-mobile-menu">
+          <span id="mobile-social-span">
+                  <nobr>
+                  <a href="#0" class="social-link-mobile-menu">
+                    <img src="{{ site.url }}/assets/images/header/facebook-icon-header.svg" class="normalsvg">
+                    <img src="{{ site.url }}/assets/images/header/facebook-icon-header-hover.svg" class="hoversvg">
+                  </a>
+                  <a href="#0" class="social-link-mobile-menu">
+                    <img src="{{ site.url }}/assets/images/header/instagram-icon-header.svg" class="normalsvg">
+                    <img src="{{ site.url }}/assets/images/header/instagram-icon-header-hover.svg" class="hoversvg">
+                  </a>
+                  <a href="#0" class="social-link-mobile-menu">
+                    <img src="{{ site.url }}/assets/images/header/linkedin-icon-header.svg" class="normalsvg">
+                    <img src="{{ site.url }}/assets/images/header/linkedin-icon-header-hover.svg" class="hoversvg">
+                  </a>
+                  <a href="#0" class="social-link-mobile-menu">
+                    <img src="{{ site.url }}/assets/images/header/pinterest-icon-header.svg" class="normalsvg">
+                    <img src="{{ site.url }}/assets/images/header/pinterest-icon-header-hover.svg" class="hoversvg">
+                  </a> 
+                  <a href="#0" class="social-link-mobile-menu">
+                    <img src="{{ site.url }}/assets/images/header/twitter-icon-header.svg" class="normalsvg">
+                    <img src="{{ site.url }}/assets/images/header/twitter-icon-header-hover.svg" class="hoversvg">
+                  </a> 
+                </nobr>
+                </span>
+              </li>
+          </ul>        

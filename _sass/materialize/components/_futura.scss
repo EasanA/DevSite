@@ -16,5 +16,36 @@
     font-family: "FuturaLTPro";
     src: local(Futura LT Pro Heavy),
         url("#{$futura-font-path}FuturaLTPro-Heavy.otf") format("opentype");
-    font-weight:700
+    font-weight:800;
+} 
+
+@font-face {
+    font-family: "FuturaLTPro";
+    src: local(Futura LT Pro Bold),
+        url("#{$futura-font-path}FuturaLTPro-Bold.otf") format("opentype");
+    font-weight:700;
 }
+
+@font-face {
+    font-family: "FuturaLTPro";
+    src: local(Futura LT Pro Oblique),
+        url("#{$futura-font-path}FuturaLTPro-MediumOblique.otf") format("opentype");
+    font-weight:500;
+    font-style: oblique;
+} 
+
+@font-face {
+    font-family: "FuturaLTPro";
+    src: local(Futura LT Pro Book Oblique),
+        url("#{$futura-font-path}FuturaLTPro-BookOblique.otf") format("opentype");
+    font-weight:300;
+    font-style: oblique;
+} 
+
+@font-face {
+    font-family: "FuturaLTPro";
+    src: local(Futura LT Pro Heavy Oblique),
+        url("#{$futura-font-path}FuturaLTPro-HeavyOblique.otf") format("opentype");
+    font-weight:800;
+    font-style: oblique;
+} 

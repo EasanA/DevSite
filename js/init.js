@@ -2,21 +2,15 @@
   $(function(){
 
     $('.button-collapse').sideNav();
-    $('.carousel').carousel();
-
-$(document).ready(function () {
-    // Plugin initialization
+    $('.carousel.carousel-slider').carousel({full_width: true});
     $('.slider').slider();
-})
-
-$(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
-  });
-
-$(document).ready(function(){
+    $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
-  });
-
-  }); // end of document ready
+    $(".rotate").textrotator({
+      animation: "flipUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 2000 // How many milliseconds until the next word show.
+    }); // end of document ready
+});
 })(jQuery); // end of jQuery name space

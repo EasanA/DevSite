@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Our Team
+title: About Us
 menu: main
 order: 2
 permalink: /team/
@@ -11,7 +11,7 @@ permalink: /team/
     <img class="responsive-img" src="{{ site.url }}/assets/images/sitewide/hero_placeholder.png">
     <div class="text-overlay">
       <div class="bar"></div>
-      <h2 class="center-align">We are on a mission</h2>
+      <h2 class="center-align">Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style</h2>
     </div>
   </div>
   <div class="section">

@@ -2,6 +2,7 @@
 
 html {
  box-sizing: border-box;
+ background-color:#f9f9f9;
 }
 *, *:before, *:after {
  box-sizing: inherit;
@@ -11,6 +12,8 @@ body {
   // display: flex;
   // min-height: 100vh;
   // flex-direction: column;
+   background-color:#f9f9f9;
+
 }
 
 main {
@@ -339,7 +342,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   color: $footer-font-color;
-  background-color: $footer-bg-color;
+  background-color: #f9f9f9;
 
   .footer-copyright {
     overflow: hidden;
@@ -348,7 +351,7 @@ ul.staggered-list li {
     align-items: center;
     padding: 10px 0px;
     color: $footer-copyright-font-color;
-    background-color: $footer-copyright-bg-color;
+    background-color: #f9f9f9;
     @extend .light;
   }
 }

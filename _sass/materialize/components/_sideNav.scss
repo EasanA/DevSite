@@ -9,6 +9,7 @@
   height: calc(100% + 60px);
   height: -moz-calc(100%); //Temporary Firefox Fix
   padding-bottom: 60px;
+  padding-top: 60px;
   background-color: $sidenav-bg-color;
   z-index: 999;
   overflow-y: auto;
@@ -35,19 +36,23 @@
     float: none;
     line-height: $sidenav-line-height;
 
-    &.active { background-color: rgba(0,0,0,.05); }
+    &.active { 
+      background-color: rgba(0,0,0,.05);
+      box-shadow: inset 6px 0px 0px 0px #165416;
+     }
   }
 
   li > a {
     color: $sidenav-font-color;
     display: block;
     font-size: $sidenav-font-size;
-    font-weight: 500;
+    font-weight: bold;
+    letter-spacing: 1px;
     height: $sidenav-item-height;
     line-height: $sidenav-line-height;
     padding: 0 ($sidenav-padding * 2);
 
-    &:hover { background-color: rgba(0,0,0,.05);}
+    &:hover { background-color: rgba(0,0,0,.05); color: #165416;}
 
     &.btn, &.btn-large, &.btn-flat, &.btn-floating {
       margin: 10px 15px;

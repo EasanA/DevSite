@@ -7,27 +7,29 @@
     }
 
   li {
-    padding: 2px 0;
-  }
+    padding: 5px 0;
+    border-top: 1px solid #DADADA; 
+    width: 80%;
+    }
+  li:last-child {
+    border-bottom: 1px solid #DADADA; 
+    }
   a {
     display: inline-block;
-    font-weight: 300;
-    color: #757575;
-    padding-left: 20px;
-    height: 1.5rem;
-    line-height: 1.5rem;
-    letter-spacing: .4;
+    font-weight: 700;
+    color: #4cb935;
+    height: 2rem;
+    line-height: 2rem;
     display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
     &:hover {
-      color: lighten(#757575, 20%);
-      padding-left: 19px;
-      border-left: 1px solid $primary-color;
+     color: #165416;
     }
     &.active {
-      font-weight: 500;
-      padding-left: 18px;
-      border-left: 2px solid $primary-color;
+      font-weight: 700;
+      color: #165416;
     }
   }
 }
