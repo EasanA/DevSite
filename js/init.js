@@ -1,16 +1,25 @@
 (function($){
   $(function(){
-
+    $.lazyLoadXT.onload = function() {
+        var $el = $(this);
+        $el
+            .removeClass('lazy-hidden')
+            .addClass('animated ' + $el.attr('data-effect'));
+    };
     $('.button-collapse').sideNav();
     $('.carousel.carousel-slider').carousel({full_width: true});
     $('.slider').slider();
+    $('select').material_select();
     $('.modal').modal();
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
-    $(".rotate").textrotator({
-      animation: "flipUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-      speed: 2000 // How many milliseconds until the next word show.
-    }); // end of document ready
+    $('ul.tabs').tabs();
+    $(document).ready(function(){
+    $('.target').pushpin({
+      top: 500,
+      bottom: 2000,
+      offset: 70
+    });
+  });
 });
 })(jQuery); // end of jQuery name space

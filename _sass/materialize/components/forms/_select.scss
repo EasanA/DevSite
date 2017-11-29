@@ -24,6 +24,7 @@ select {
     top: 0;
     left: 0;
     opacity: 0;
+    padding-left: 10px;
   }
 }
 
@@ -67,7 +68,7 @@ select {
   input.select-dropdown {
     position: relative;
     cursor: pointer;
-    background-color: transparent;
+    background-color: #f9f9f9;
     border: none;
     border-bottom: $input-border;
     outline: none;
@@ -76,13 +77,13 @@ select {
     width: 100%;
     font-size: $input-font-size;
     margin: $input-margin;
-    padding: 0;
+    padding-left: 10px;
     display: block;
     user-select:none;
   }
 
   span.caret {
-    color: initial;
+    color: #2f2f2f;
     position: absolute;
     right: 0;
     top: 0;
@@ -108,7 +109,7 @@ select:disabled {
 .select-wrapper.disabled {
   span.caret,
   & + label {
-    color: $input-disabled-color;
+    color: #4b4b4b;
   }
 }
 

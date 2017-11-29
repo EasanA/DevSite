@@ -10,6 +10,10 @@ html{
     font-size: 14px;
   }
 
+  @media only screen and (min-width: 600px) {
+    font-size: 14px;
+  }
+
   @media only screen and (min-width: $medium-screen) {
     font-size: 14.5px;
   }
@@ -33,6 +37,7 @@ h2 {
 
 
 // Header Styles
+// Mobile
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 @media only screen and (min-width: 0) {
 h1 { font-size: $h1-fontsize-mobile; line-height: 130%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
@@ -42,11 +47,33 @@ h4 { font-size: $h4-fontsize-mobile; line-height: 110%; margin: ($h4-fontsize / 
 h5 { font-size: $h5-fontsize-mobile; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
 h6 { font-size: $h6-fontsize-mobile; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;}
 }
+// Tablet
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+@media only screen and (min-width: 600px){
+h1 { font-size: $h1-fontsize-tablet; line-height: 130%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
+h2 { font-size: $h2-fontsize-tablet; line-height: 165%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
+h3 { font-size: $h3-fontsize-tablet; line-height: 130%; margin: 0 0 ($h3-fontsize / 2.5) 0;}
+h4 { font-size: $h4-fontsize-tablet; line-height: 110%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
+h5 { font-size: $h5-fontsize-tablet; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
+h6 { font-size: $h6-fontsize-tablet; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;}
+}
 
+// Tablet Landscape
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 @media only screen and (min-width: $medium-screen){
+h1 { font-size: $h1-fontsize-landscape; line-height: 130%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
+h2 { font-size: $h2-fontsize-landscape; line-height: 165%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
+h3 { font-size: $h3-fontsize-landscape; line-height: 130%; margin: 0 0 ($h3-fontsize / 2.5) 0;}
+h4 { font-size: $h4-fontsize-landscape; line-height: 110%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
+h5 { font-size: $h5-fontsize-landscape; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}
+h6 { font-size: $h6-fontsize-landscape; line-height: 110%; margin: ($h6-fontsize / 2) 0 ($h6-fontsize / 2.5) 0;}
+}
+
+// Desktop
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+@media only screen and (min-width: $large-screen){
 h1 { font-size: $h1-fontsize; line-height: 130%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
-h2 { font-size: $h2-fontsize; line-height: 130%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
+h2 { font-size: $h2-fontsize; line-height: 165%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
 h3 { font-size: $h3-fontsize; line-height: 130%; margin: 0 0 ($h3-fontsize / 2.5) 0;}
 h4 { font-size: $h4-fontsize; line-height: 110%; margin: ($h4-fontsize / 2) 0 ($h4-fontsize / 2.5) 0;}
 h5 { font-size: $h5-fontsize; line-height: 110%; margin: ($h5-fontsize / 2) 0 ($h5-fontsize / 2.5) 0;}

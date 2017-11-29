@@ -5,138 +5,114 @@ menu: main
 order: 2
 permalink: /team/
 ---
-<!-- Rewrite without containers to fix -->
-<div class="container">
-  <div class="overlay">
-    <img class="responsive-img" src="{{ site.url }}/assets/images/sitewide/hero_placeholder.png">
-    <div class="text-overlay">
-      <div class="bar"></div>
-      <h2 class="center-align">Super <span class="rotate">Simple, Customizable, Light Weight, Easy</span> Text Rotator with Style</h2>
+<!-- Hero Image -->
+<div class="flexrow" style="height: 400px;width: auto;">
+  <img class="responsive-img" src="{{ site.url }}/assets/images/partner/partners-hero.jpg">
+</div>
+<!-- Mission Statement -->
+<div class="marginspacer">
+</div>
+  <div class="flexrow" style="margin-left: calc(100% / 10); margin-right: calc(100% / 10)">
+    <div style="flex: 2 1 0">
+      <div class="leftbar"></div>
+      <h1>We're On A Mission</h1>
+    </div>
+    <div style="flex: 3 1 0">
+      <p class="body">Built on a vision to empower consumers to eat and live better. We do this by giving food a voice. And with this bridge the incredicle pace of eating innovation and existing consumer behavior; helping how people eat everyday.</p>
     </div>
   </div>
-  <div class="section">
-	 <div class="row">
-		<div class="col s10 offset-s1">
-		<p class="center-align">While technology has transformed so many aspects of modern life, food has remained stubbornly analog. At Innit, we aim to bridge this divide. We envision a world where people utilize technology that intelligently and unobtrusively enhances their existing and cherished routines. A world where cooking and eating at home is not an insurmountable chore, but a natural pleasure of life - enabled by elegantly integrated technology.</p>
-		</div>
-	</div>
-	<div class="section">
-	 <div class="row">
-	   <h2 class="center-align">Our Team</h2>
-	 </div>
-	 <div class="row">
-		<div class="col s12 m4">
-        	<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-        	<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-		<div class="col s12 m4">
-        	<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-        	<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-		<div class="col s12 m4">
-    		<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-    		<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col s12 m4">
-        	<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-        	<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-		<div class="col s12 m4">
-        	<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-        	<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-		<div class="col s12 m4">
-    		<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-    		<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col s12 m4">
-        	<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-        	<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-		<div class="col s12 m4">
-        	<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-        	<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-		<div class="col s12 m4">
-    		<img class="responsive-img" src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-    		<h4 class="center-align">Name</h4>
-        	<h5 class="center-align">Role</h5>
-		</div>
-	</div>
-	</div>
-  <!-- Style the background, probably make it a div id -->
-	<div class="section">
-	<div class="row">
-    <div class="col s12">
-      <h3>Scientific and Governance Committee</h3>
-    </div>
-		<div class="col s12 m6">
-    		<div class="card horizontal">
-      		<div class="card-image">
-        		<img src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-      		</div>
-      	<div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+<div class="marginspacer">
+</div>
+<!-- Tabs -->
+<div class="flexrow">
+  <ul class="tabs" style="text-align: center;border-bottom: 1px solid #DADADA;">
+    <li class="tab col s3"><a class="active" href="#executive">Our Executives</a></li>
+    <li class="tab col s3"><a href="#team">Our Team</a></li>
+    <li class="tab col s3"><a href="#advisor">Our Advisors</a></li>
+  </ul>
+</div>
+<!-- Executive Tab -->
+<div id="executive">
+  <div class="flexrow" style="flex-direction: row; justify-content: space-around;flex-wrap: wrap;">
+  {% for profile in site.data.executive %}
+    <div class="headshotholder" style="position: relative;flex-basis: 30%;margin-top: 10px">
+      <div class="photo">
+        <img class="responsive-img" src="{{ site.url }}{{ profile.imageA }}">
+      </div>
+      <div class="hoverphoto">
+        <img class="responsive-img" src="{{ site.url }}{{ profile.imageB }}">
+      </div>
+      <div class="textoverlay" style="background-color: rgba(249, 249, 249, .7); position: absolute; bottom: 0; left: 0; z-index: 1;width: 100%;padding-left: 15px;">
+        <h5 style="padding-top: 10px;margin-bottom: 5px;">{{ profile.name }}</h5>
+        <p class="body" style="margin-bottom: 0px; margin-top: 0px;">{{ profile.title }}</p>
+        <div class="headshotlinkholder" style="">
+        <a class="profile" href="#" style="display: inline-block;float: right; color: #2f2f2f; margin: 0 5px 10px 0;vertical-align: middle;">PROFILE<i class="material-icons" style="height: 12px;display: inline-block;vertical-align: -5px;">keyboard_arrow_right</i></a>
         </div>
       </div>
+    </div>
+  {% endfor %}
+  <div class="ghostholder" style="height: 0; flex-basis: 30%;">
+  </div>
+  <div class="ghostholder" style="height: 0; flex-basis: 30%;">
+  </div>
+  </div>
+</div>
+<!-- Team Tab -->
+<div id="team">
+  <div class="flexrow" style="flex-direction: row; justify-content: space-around;flex-wrap: wrap;">
+  {% for profile in site.data.team %}
+    <div class="headshotholder" style="position: relative;flex-basis: 30%;margin-top: 10px;">
+      <div class="photo">
+        <img class="responsive-img" src="{{ site.url }}{{ profile.imageA }}">
+      </div>
+      <div class="hoverphoto">
+        <img class="responsive-img" src="{{ site.url }}{{ profile.imageB }}">
+      </div>
+      <div class="hovertextoverlay" style="background-color: rgba(249, 249, 249, .5); position: absolute; bottom: 0; left: 0; z-index: 1;width: 100%;padding-left: 15px;">
+        <h5 style="padding-top: 15px;padding-bottom: 15px;">{{ profile.name }}</h5>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="ghostholder" style="height: 0; flex-basis: 30%;">
+  </div>
+  <div class="ghostholder" style="height: 0; flex-basis: 30%;">
+  </div>
+  </div>
+</div>
+<!-- Advisors --> 
+<div id="advisor">
+  <div class="flexrow" style="flex-direction: row; justify-content: space-around;flex-wrap: wrap;">
+  {% for profile in site.data.advisor %}
+    <div class="headshotholder" style="position: relative;flex-basis: 30%; margin-top: 10px;">
+      <div class="photohoveroff">
+        <img class="responsive-img" src="{{ site.url }}{{ profile.image }}">
+      </div>
+      <div class="textoverlay" style="background-color: rgba(249, 249, 249, .5); position: absolute; bottom: 0; left: 0; z-index: 1;width: 80%;padding-left: 15px;">
+        <h5>{{ profile.name }}</h5>
+        <p class="body">{{ profile.role }}</p>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="ghostholder" style="height: 0; flex-basis: 30%;">
+  </div>
+  <div class="ghostholder" style="height: 0; flex-basis: 30%;">
+  </div>
+  </div>
+</div>
+<!-- Location -->
+<div class="marginspacer">
+  <div class="flexrowlocation" style="margin-right: calc(100% / 10);margin-left: calc(100% / 10);">
+    <div class="locationtext" style="flex: 3 1 0;">
+      <h3>Our Location</h3>
+      <p>Innit is located in the heart of downtown Redwood City just a three minute walk from the Redwood City Caltrain station.  Our office is close restaurants and lots of great places to grab coffee or tea.</p>
+      <div class="divider"></div>
+      <div class="miniflexsection" style="display: flex;">
+        <img class="responsive-img" src="{{ site.url }}/assets/images/team/about-us-pin.svg" style="margin-right: 10px;">
+        <p style="display: inline;">399 Bradford Street Suite 105 <br> Redwood City, CA 94063</p>
+      </div>
+    </div>
+    <div class="map" style="flex: 5 1 0; margin-left: calc(100% / 12);margin-right: calc(100% / 12);">
+      <img class="responsive-img" src="{{ site.url }}/assets/images/team/about-us-map.jpg">
     </div>
   </div>
-  <div class="col s12 m6">
-    		<div class="card horizontal">
-      		<div class="card-image">
-        		<img src="{{ site.url }}/assets/images/team/headshot_placeholder.png">
-      		</div>
-      	<div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-	</div>
-	</div>
-  <!-- Style for Individual div or should I make a class -->
-  <div class="slider">
-    <ul class="slides">
-    <li>
-      <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-    </li>
-    <li>
-      <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-    </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-      </li>
-    </ul>
-    </div>
-    <div class="CTA">
-      <div class="CTA-text">
-        <h4>Join our Innit team</h4>
-      </div>
-      <div class="CTA-button">
-        <h4>See Open Positions</h4>
-      </div>
-    </div> 
 </div>

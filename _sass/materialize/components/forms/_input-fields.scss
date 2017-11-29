@@ -24,10 +24,10 @@ input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
 
   // General Styles
-  background-color: transparent;
+  background-color: #f9f9f9;
   border: none;
   border-bottom: $input-border;
-  border-radius: 0;
+  border-radius: 2px;
   outline: none;
   height: $input-height;
   width: 100%;
@@ -168,10 +168,10 @@ textarea.materialize-textarea {
   }
 
   position: relative;
-  margin-top: 1rem;
+  margin-top: 0;
 
   label {
-    color: $input-border-color;
+    color: #2f2f2f;
     position: absolute;
     top: 0;
     left: 0;
@@ -251,7 +251,7 @@ textarea.materialize-textarea {
     & + label i,
     & ~ .mdi-navigation-close,
     & ~ .material-icons {
-      color: #444;
+      color: #f9f9f9;
     }
   }
 

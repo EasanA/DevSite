@@ -1,46 +1,109 @@
-- title: Innit Acquires ShopWell, Plans Platform Launch in 2017 
-  date: September 29, 2017
-  year: 2017
-  url: www.google.com 
-  logo: /assets/images/dev/image-2.jpg
-  company_name: Red Company
+# Format, please do not leave a blank entries
+# if there is a colon, uses quotes
+# - title:
+#  blurb: if no blurb, put title
+#  date:
+#  year:
+#  url:
+#  logo:
+#  company_name:
 
-- title: Test Article2
-  blurb: This is a test!2
-  date: September 30, 2009
+- title: Innit Acquires ShopWell, Plans Platform Launch in 2017
+  blurb: Innit Acquires ShopWell, Plans Platform Launch in 2017
+  date: "February 23, 2017"
   year: 2017
-  url: www.google.com 
+  url: http://www.businesswire.com/news/home/20170223005344/en/Innit-Acquires-ShopWell-Plans-Platform-Launch-2017 
   logo: /assets/images/press/logo/quote-businesswire.png
-  company_name: Red Company
+  company_name: Business Wire
+  date-order: 2
+  type: PR
 
-- title: Test Article3
-  blurb: This is a test!2
-  date: Sept 21, 2017
+- title: Inside the Kitchen That Listens to Food and Cooks by Itself
+  blurb: Inside the Kitchen that Listens to Food and Cooks by Itself
+  date: "November 4, 2015"
+  year: 2015
+  url: https://www.wired.com/2015/11/innit-future-kitchen/ 
+  logo: /assets/images/press/logo/quotes-Wired_logo-01.png
+  company_name: Wired
+  date-order: 1
+  type: News
+
+- title: Exploring what's Innit
+  blurb: Exploring What’s Innit?
+  date: "September 20, 2017"
   year: 2017
-  url: www.google.com 
+  url: http://www.foodbusinessnews.net/articles/news_home/Business_News/2017/09/Exploring_whats_Innit.aspx?ID=%7B7206FBFA-E715-45D2-8041-B872016530B6%7D&cck=1
   logo: /assets/images/dev/image-2.jpg
-  company_name: Red Company
+  company_name: Food Business News
+  date-order: 3
+  type: News
 
-- title: Inside the kitchen that listens to food and cooks by itself
-  blurb: This is a test!2
-  date: Sept 25, 2017
+- title: Chef Tyler Florence Joins Eating Technology Company
+  blurb: Celebrity chef Tyler Florence has joined Innit.
+  date: "October 13, 2017"
   year: 2017
   url: www.google.com 
   logo: /assets/images/press/logo/quotes-Wired_logo-01.svg
-  company_name: Red Company
+  company_name: Specialty Food Association
+  date-order: 7
+  type: News
 
-- title: Innit wants to make cooking a delicious meal as easy as pushing a button
-  blurb: This is a test!2
-  date: Sept 26, 2017
+- title: Will Technology Kill The Recipe Star? Tyler Florence Is Betting On It
+  blurb: Recipes are completely dead.
+  date: "October 12, 2017"
   year: 2017
-  url: www.google.com 
+  url: http://www.foodandwine.com/news/tyler-florence-rip-recipes
   logo: /assets/images/press/logo/quote-digitaltrends.png
-  company_name: Red Company
+  company_name: Food & Wine
+  date-order: 5
+  type: News
 
-- title: Innit launches connected food platform for everyday eating
-  blurb: This is a test!5
-  date: Sept 26, 2017
+- title: "Kitchen of the Future: Smart and Fast but Not Much Fun"
+  blurb: Innit uses technology to create a centralized hub for the kitchen
+  date: "October 13, 2017"
   year: 2017
-  url: www.google.com 
+  url: https://www.nytimes.com/2017/10/13/dining/smart-kitchen-future.html
   logo: /assets/images/press/logo/quote-businesswire.png
-  company_name: Red Company
+  company_name: New York Times
+  date-order: 8
+  type: News
+
+- title: Celebrity Chef Tyler Florence Says Recipes Are Dead
+  blurb: Innit is focusing on the way individuals want to eat.
+  date: "October 10, 2017"
+  year: 2017
+  url: https://www.forbes.com/sites/ronaldholden/2017/10/10/celebrity-chef-tyler-florence-says-recipes-are-dead/
+  logo: /assets/images/press/logo/quote-businesswire.png
+  company_name: Forbes
+  date-order: 4
+  type: News
+
+- title: Any app can show recipes. Chef Tyler Florence’s teaches you how to cook
+  blurb: Innit wants to make cooking a delicious meal as easy as pushing a button
+  date: "October 13, 2017"
+  year: 2017
+  url: https://www.digitaltrends.com/features/innit-pairs-with-tyler-florence-for-a-micro-cooking-recipe-app/
+  logo: /assets/images/press/logo/quote-businesswire.png
+  company_name: Digital Trends
+  date-order: 9
+  type: News
+
+- title: Celebrity Chef Tyler Florence Says Recipes Are Dead
+  blurb: Celebrity Chef Tyler Florence Says Recipes Are Dead
+  date: "October 12, 2017"
+  year: 2017
+  url: https://www.thekitchn.com/chef-tyler-florence-says-that-recipes-are-dead-251346
+  logo: /assets/images/press/logo/quote-businesswire.png
+  company_name: Kitchn
+  date-order: 6
+  type: News
+
+- title: World’s First Connected Food Platform Launches App to Revolutionize the Way We Eat
+  blurb: World’s First Connected Food Platform Launches App to Revolutionize the Way We Eat
+  date: "December 5, 2017"
+  year: 2017 
+  url: TBD
+  logo: /assets/images/press/logo/quote-businesswire.png
+  company_name: Business Wire
+  date-order: 10
+  type: PR

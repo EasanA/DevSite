@@ -3,8 +3,9 @@ layout: default
 ---
 <!-- Hero Section Desktop -->
 <div class="row hide-on-small-only" style="position: relative;">
-   <video id="hero-video" muted poster="{{ site.url }}/assets/images/homepage/homepage-hero.png">
-    <source src="{{ site.url }}/assets/video/big_buck_bunny.mp4" type="video/mp4">
+   <video id="hero-video" muted poster="{{ site.url }}/assets/images/homepage/homepage-hero.jpg">
+    <!--Insert Official Video
+    <source src="{{ site.url }}/assets/video/big_buck_bunny.mp4" type="video/mp4"> -->
   </video>
   <div class="hero-text" style="position: absolute;top:40%; margin-left: calc(100% / 12);transform: translateY(-50%);max-width: 380px;width:calc(100% / 12 * 5); color: #f2f2f2;z-index: 3">
     <div class="section">
@@ -13,8 +14,8 @@ layout: default
       <h1 style="margin-top: 10px; margin-bottom: 0px;">Enjoy The Way<br>You Eat</h1>
       <h2 class="hero-body">We make meal planning, shopping, preparing, and cooking, fast, easy, and delicious.</h2>
       <div class="buttonholder" style="white-space: nowrap;">
-        <a class="waves-effect waves-light btn-large" style="display:inline-block;margin-right: 5px;">Download Free App</a>
-        <a class="waves-effect waves-light btn-large inverse" style="display: inline-block;">Watch Video</a>
+        <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1" style="display:inline-block;margin-right: 5px;">Download Free App</a>
+        <a class="waves-effect waves-light btn-large inverse" style="display: none;">Watch Video</a>
       </div>
     </div>
   </div>
@@ -22,147 +23,174 @@ layout: default
 <!-- Hero Section Mobile -->
 <div class="flexrow hide-on-med-and-up">
   <div class="mobilehero">
-    <img src="{{ site.url }}/assets/images/homepage/homepage-hero-mobile.jpg" style="width: 100%">
+    <img class="lazy" data-src="{{ site.url }}/assets/images/homepage/homepage-mobile-hero.jpg" style="width: 100%;"><noscript><img src="{{ site.url }}/assets/images/homepage/homepage-mobile-hero.jpg" style="width: 100%;"></noscript>
   </div>
-  <div class="marginspacer">
+  <div class="marginspacer" style="margin-bottom: 50px">
     <div class="" style="padding-left: calc(100% / 12);padding-right: calc(100% / 12)">
       <div class="leftbar">
       </div>
-      <h1 style="margin-top: 10px;">Enjoy The Way <br> You Eat</h1>
+      <h1 style="margin-top: 10px;"><span class="titlebreakmobile">Enjoy The Way</span> <span class="titlebreakmobile">You Eat</span></h1>
       <h2 class="hero-body">We make meal planning, shopping, preparing, and cooking, fast, easy, and delicious.</h2>
-      <div class="buttonholdermobile" style="white-space: wrap;text-align: center;margin-bottom: 50px;">
-        <a class="waves-effect waves-light btn-large" style="display:inline-block;width: 100%;max-width: 400px;">Download Free App</a>
+      <div class="buttonholdermobile" style="text-align: center;">
+        <a class="waves-effect waves-light btn-large regbutton modal-trigger" href="#modal1" style="float: left;">Download Free App</a>
+        <a class="waves-effect waves-light btn-large mobilebutton modal-trigger" href="#modal1" style="width: 100%;">Download Free App</a>
         <div class="buttonpadding" style="margin-top: 10px;"></div>
-        <a class="waves-effect waves-light btn-large inverse" style="display: inline-block;width: 100% ;max-width: 400px;">Watch Video</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Half Section for News -->
-<!--
-<div class="row" style="background-color: #dadada;">
-  <div class="col s6 m5 offset-m1">
-    <img src="{{ site.url }}/assets/images/team/headshot_placeholder.png" style="width:50%;">
-  </div>
-  <div class="col s6">
-    <h2>Tyler Florence Joins The Innit Team</h2>
-    <p>The Top Chef is now our Chief Content and Innovation Officer. Tyler and our culinary team are designing meals that work for everday with flavors you'll love.</p>
-  </div>
-</div> -->
-<!-- Normal Section Picture Right-->
-<div id="topmarginspacer">
-<div class="flexrowtextleft">
-  <div class="textspacer">
-    <div  class="flextextleft">
-    <h4 class="subheader">Meals just for you</h4>
-    <h3>Personalized To You</h3>
-    <p class="body">We help you cook meals that are personalized to your likes and needs. If you're a vegetarian you won't see meat. If you're allergic to nuts, you won't see them. Simply build a meal or choose one recommended just for you.</p>
-    </div>
-  </div>
-  <div class="flexphotoright">
-    <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-personalize-1.jpg">
-  </div>
-</div>
-</div>
-<!-- Normal Section Picture Left-->
-<div class="marginspacer">
-  <div class="flexrowtextright">
-    <div class="flexphotoleft">
-      <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/hompage-confidence.jpg">
-    </div>
-    <div class="textspacer">
-      <div class="flextextright">
-        <h4 class="subheader">Everything ready at once</h4>
-        <h3>Cook With Confidence</h3>
-        <p class="body">We handle the challenges that stand between you and making food at home. Our guided cooking system shows you what to do so you can cook with confidence and have all parts of your meal ready at the same time.</p>
+        <a class="waves-effect waves-light btn-large inverse" style="display: none;width: 100% ;max-width: 400px;">Watch Video</a>
       </div>
     </div>
   </div>
 </div>
 <!-- Normal Section Picture Right-->
-<div class="marginspacer">
-  <div class="flexrowtextleft">
-    <div class="textspacer">
-      <div class="flextextleft">
-        <h4 class="subheader">Change Meals with a Tap</h4>
-        <h3 style="overflow: visible;">Mix And Match To Customize</h3>
-        <p class="body" style="width: 290px;">Modify any meal with a tap to instantly change the protein, starch, vegetable, or sauce to fit your cravings or what's in your fridge. The cooking instructions to step-by-step videos automatically update.</p>   
+<div class="container">
+  <div id="topmarginspacer">
+    <div class="flexrowtextleft">
+      <div class="textspacer">
+        <div  class="flextextleft">
+        <h4 class="subheader">Meals just for you</h4>
+        <h3>Personalized To You</h3>
+        <p class="body">We help you cook meals that are personalized to your likes and needs. If you're a vegetarian you won't see meat. If you're allergic to nuts, you won't see them. Simply build a meal or choose one recommended just for you.</p>
+        </div>
       </div>
-    </div>
-    <div class="flexphotoright">
-       <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-customize.jpg">
+      <div class="flexphotoright">
+        <img class="lazy responsive-img hide-on-med-and-up" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-personalize-1.jpg"><noscript><img class="responsive-img hide-on-med-and-up" src="{{ site.url }}/assets/images/homepage/homepage-personalize-1.jpg"></noscript>
+        <video class="lazy responsive-video hide-on-small-only" data-effect="fadeInUp" autoplay muted loop="true">
+          <source data-src="{{ site.url }}/assets/video/chatbot-animation-V2.mp4" type="video/mp4">
+        </video>
+        <noscript>
+          <video class="responsive-video hide-on-small-only" autoplay muted loop="true">
+           <source src="{{ site.url }}/assets/video/chatbot-animation-V2.mp4" type="video/mp4">
+          </video>
+        </noscript>
+      </div>
     </div>
   </div>
 </div>
 <!-- Normal Section Picture Left-->
-<div class="marginspacer">
-  <div class="flexrowtextright">
-    <div class="flexphotoleft">
-       <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-hurry-3.jpg">
+<div class="container">
+  <div class="marginspacer">
+    <div class="flexrowtextright">
+      <div class="flexphotoleft">
+        <img class="lazy responsive-img hide-on-med-and-up" data-effect="fadeInRight" data-src="{{ site.url }}/assets/images/homepage/hompage-confidence.jpg"><noscript><img class="responsive-img hide-on-med-and-up" src="{{ site.url }}/assets/images/homepage/homepage-personalize-1.jpg"></noscript>
+        <video class="lazy responsive-video hide-on-small-only" data-effect="fadeIn" autoplay muted loop="true">
+          <source data-src="{{ site.url }}/assets/video/homepage-cook-confidence.mp4" type="video/mp4">
+        </video>
+        <noscript>
+          <video class="responsive-video hide-on-small-only" autoplay muted loop="true">
+           <source src="{{ site.url }}/assets/video/homepage-cook-confidence.mp4" type="video/mp4">
+          </video>
+        </noscript>
+      </div>
+      <div class="textspacer">
+        <div class="flextextright">
+          <h4 class="subheader">Everything ready at once</h4>
+          <h3>Cook With Confidence</h3>
+          <p class="body">We handle the challenges that stand between you and making food at home. Our guided cooking system shows you what to do so you can cook with confidence and have all parts of your meal ready at the same time.</p>
+        </div>
+      </div>
     </div>
-    <div class="textspacer">
-      <div class="flextextright">
-        <h4 class="subheader">Meals Have Few Steps</h4>
-        <h3>In A Hurry? <br> We Make It Fast</h3>
-        <p class="body">We know you're busy. So, we've made it fast.</p>
-        <ul class="normallist">
-          <li>
-            Get everyday dinner inspiration
-          </li>
-          <li>
-            Tap for a time-saving shopping list
-          </li>
-          <li>
-            Enjoy entire meals rather than just one dish
-          </li>
-          <li>
-            Meals have a small number of steps
-          </li>
-        </ul>
+  </div>
+</div>
+<!-- Normal Section Picture Right-->
+<div class="container">
+  <div class="marginspacer">
+    <div class="flexrowtextleft">
+      <div class="textspacer">
+        <div class="flextextleft">
+          <h4 class="subheader">Change Meals with a Tap</h4>
+          <h3><span class="titlebreak">Mix And Match</span> <span class="titlebreak">To Customize</span></h3>
+          <p class="body">Modify any meal with a tap to instantly change the protein, starch, vegetable, or sauce to fit your cravings or what's in your fridge. The cooking instructions to step-by-step videos automatically update.</p>   
+        </div>
+      </div>
+      <div class="flexphotoright">
+         <img class="responsive-img hide-on-med-and-up" src="{{ site.url }}/assets/images/homepage/homepage-customize.jpg">
+         <video class="lazy responsive-video hide-on-small-only" data-effect="fadeInUp" autoplay muted loop="true">
+          <source data-src="{{ site.url }}/assets/video/homepage-mix-and-match-2.mp4" type="video/mp4">
+        </video>
+        <noscript>
+          <video class="responsive-video hide-on-small-only" autoplay muted loop="true">
+           <source src="{{ site.url }}/assets/video/homepage-mix-and-match-2.mp4" type="video/mp4">
+          </video>
+        </noscript>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Normal Section Picture Left-->
+<div class="container">
+  <div class="marginspacer">
+    <div class="flexrowtextright">
+      <div class="flexphotoleft">
+        <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-hurry-3.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-hurry-3.jpg"></noscript>
+      </div>
+      <div class="textspacer">
+        <div class="flextextright">
+          <h4 class="subheader">Meals Have Few Steps</h4>
+          <h3>
+            <span class="titlebreak">In A Hurry? </span>
+            <span class="titlebreak">We Make It Fast</span>
+          </h3>
+          <p class="body">We know you're busy. So, we've made it fast.</p>
+          <ul class="normallist">
+            <li>
+              Get everyday dinner inspiration
+            </li>
+            <li>
+              Tap for a time-saving shopping list
+            </li>
+            <li>
+              Enjoy entire meals rather than just one dish
+            </li>
+            <li>
+              Meals have a small number of steps
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 <!-- Single Long Section Desktop -->
-<div class="marginspacer hide-on-small-only">
-  <div class="row">
-    <div class="col s12 m10 offset-m1">
-      <h4 class="subheader">All-In-One Platform</h4>
-      <h3>From Planning To Cooking All in One Place</h3>
-      <table>
-        <tr>
-          <td>
-            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-plan.jpg">
-          </td>
-          <td>
-            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-shop.jpg">
-          </td>
-          <td>
-            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-prep.jpg">
-          </td>
-          <td>
-            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/hompage-cook.jpg">
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <h5 style="color: #FD6224;">Planning</h5>
-            <p class="body2">Plan a personalized meal for the moment or for the week.</p>
-          </td>
-          <td>
-            <h5 style="color: #FD6224;">Shopping</h5>
-            <p class="body2">Create shopping lists based on your meals and your lifestyle.</p>
-          </td>
-          <td>
-            <h5 style="color: #FD6224;">Preparing</h5>
-            <p class="body2">Get step-by-step guidance improve your skills.</p>
-          </td>
-          <td>
-            <h5 style="color: #FD6224;">Cooking</h5>
-            <p class="body2">Make delicious everyday meals that are ready when you are.</p>
-          </td>
-        </tr>
-      </table>
+<div class="container">
+  <div class="marginspacer hide-on-small-only">
+    <div class="row">
+      <div class="col s12 m10 offset-m1">
+        <h4 class="subheader">All-In-One Platform</h4>
+        <h3>From Planning To Cooking All in One Place</h3>
+        <table>
+          <tr>
+            <td>
+               <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-plan.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-plan.jpg"></noscript>
+            </td>
+            <td>
+              <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-shop.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-shop.jpg"></noscript>
+            </td>
+            <td>
+              <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-prep.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-prep.jpg"></noscript>
+            </td>
+            <td>
+              <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-cook.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-cook.jpg"></noscript>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">
+              <h5 style="color: #FD6224; ">Planning</h5>
+              <p class="bodytable">Plan a personalized meal for the moment or for the week.</p>
+            </td>
+            <td style="vertical-align: top;">
+              <h5 style="color: #FD6224;vertical-align: top;">Shopping</h5>
+              <p class="bodytable">Create shopping lists based on your meals and your lifestyle.</p>
+            </td>
+            <td style="vertical-align: top;">
+              <h5 style="color: #FD6224; vertical-align: top;">Preparing</h5>
+              <p class="bodytable">Get step-by-step guidance improve your skills.</p>
+            </td>
+            <td style="vertical-align: top;">
+              <h5 style="color: #FD6224;vertical-align: top;">Cooking</h5>
+              <p class="bodytable">Make delicious everyday meals that are ready when you are.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 </div>
@@ -175,38 +203,38 @@ layout: default
       <table>
         <tr>
           <td>
-            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-plan.jpg">
+            <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-plan.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-plan.jpg"></noscript>
           </td>
           <td>
             <h5 style="color: #FD6224;">Planning</h5>
-            <p class="body2">Plan a personalized meal for the moment or for the week.</p>
+            <p class="bodytable">Plan a personalized meal for the moment or for the week.</p>
           </td>
         </tr>
         <tr>
           <td>
-            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-shop.jpg">
+            <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-shop.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-shop.jpg"></noscript>
           </td>
           <td>
             <h5 style="color: #FD6224;">Shopping</h5>
-            <p class="body2">Create shopping lists based on your meals and your lifestyle.</p>
+            <p class="bodytable">Create shopping lists based on your meals and your lifestyle.</p>
           </td>
         </tr>
         <tr>
           <td>
-            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-prep.jpg">
+            <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-prep.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-prep.jpg"></noscript>
           </td>
           <td>
             <h5 style="color: #FD6224;">Preparing</h5>
-            <p class="body2">Get step-by-step guidance improve your skills.</p>
+            <p class="bodytable">Get step-by-step guidance improve your skills.</p>
           </td>
         </tr>
         <tr>
           <td>
-            <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/hompage-cook.jpg">
+            <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-cook.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-cook.jpg"></noscript>
           </td>
           <td>
             <h5 style="color: #FD6224;">Cooking</h5>
-            <p class="body2">Make delicious everyday meals that are ready when you are.</p>
+            <p class="bodytable">Make delicious everyday meals that are ready when you are.</p>
           </td>
         </tr>
       </table>
@@ -214,68 +242,67 @@ layout: default
   </div>
 </div>
 <!-- Highlight Section Picture Right-->
-<div class="marginspacer" style="background-color: #e8eff0;">
-  <div class="flexrowtextleft">
-    <div class="textspacer" style="margin-top: 0px;">
-      <div class="flextextleft" id="highlightsection">
-      <h4 class="subheader">Make Delicious Dinners</h4>
-      <h3>Amazing Team</h3>
-      <p class="body">Our meals are designed to be delicious with amazing flavor. Top Chef, Tyler Florence, is our Chief Content and Innovation Officer. Tyler and our culinary team have designed meals that work for everyday with flavors you'll love.</p>
+<div class="container">
+  <div class="marginspacer" style="background-color: #e8eff0;">
+    <div class="flexrowtextleft">
+      <div class="textspacer" style="margin-top: 0px;">
+        <div class="flextextleft" id="highlightsection">
+        <h4 class="subheader">Make Delicious Dinners</h4>
+        <h3>Amazing Team</h3>
+        <p class="body">Our meals are designed to be delicious with amazing flavor. Top Chef, Tyler Florence, is our Chief Content and Innovation Officer. Tyler and our culinary team have designed meals that work for everyday with flavors you'll love.</p>
+        </div>
       </div>
-    </div>
-    <div class="flexphotoright" id="highlightphoto">
-     <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-tyler.jpg">
+      <div class="flexphotoright" id="highlightphoto">
+        <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-tyler.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-tyler.jpg"></noscript>
+      </div>
     </div>
   </div>
 </div>
 <!-- Partner Section: Picture Left, Logo Bottom -->
-<div class="marginspacer">
-  <div class="flexrowtextright">
-    <div class="flexphotoleft">
-       <img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-appliances.jpg">
-    </div>
-    <div class="textspacer">
-      <div class="flextextright">
-        <h4 class="subheader">Connecting The Smart Kitchen</h4>
-        <h3>Connect With Your Smart Appliances</h3>
-        <p class="body">We work with both connected and non-connected kitchens. For those with smart appliances, our guided cooking system allows you to achieve optimal results every time. We vary the oven temperature to perfectly cook the meal, provide helpful notifications throughout the cooking process, cook food faster, and tell you when your meal is ready.</p>
-        <div class="logoholder" style="margin-right: auto;margin-left: auto; height: 40px;">
-          <nobr>
-            <img src="{{ site.url }}/assets/images/homepage/partner-logos-bosch.svg" style="height: 35px;margin-bottom: -3px;">
-            <img src="{{ site.url }}/assets/images/homepage/partner-logos-chefd.svg" style="height: 25px;">
-            <img src="{{ site.url }}/assets/images/homepage/partner-logos-GE.svg" style="height: 35px;">
-            <img src="{{ site.url }}/assets/images/homepage/partner-logos-perfect.svg" style="height: 25px;">
-         </nobr>
+<div class="container">
+  <div class="marginspacer">
+    <div class="flexrowtextright">
+      <div class="flexphotoleft">
+          <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-appliances.jpg"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-appliances.jpg"></noscript>
+      </div>
+      <div class="textspacer">
+        <div class="flextextright">
+          <h4 class="subheader">Connecting The Smart Kitchen</h4>
+          <h3><span class="titlebreak">Connect With</span> <span class="titlebreak">Your Smart Appliances</span></h3>
+          <p class="body">We work with both connected and non-connected kitchens. For those with smart appliances, our guided cooking system allows you to achieve optimal results every time. We vary the oven temperature to perfectly cook the meal, provide helpful notifications throughout the cooking process, cook food faster, and tell you when your meal is ready.</p>
+          <div class="logoholder" style="margin-right: auto;margin-left: auto;">
+            <img class="lazy responsive-img" data-effect="fadeInUp" data-src="{{ site.url }}/assets/images/homepage/homepage-partner-logos-01.svg" style="width: 100%  ; height: auto;"><noscript><img class="responsive-img" src="{{ site.url }}/assets/images/homepage/homepage-partner-logos-01.svg" style="width: 100%;height: auto;"></noscript>
+          </div>
         </div>
       </div>
-    </div>
-  </div> 
+    </div> 
+  </div>
 </div>
 <!-- News Section Slider: 2 Panels -->
-<div class="marginspacer">
-<div class="containertest">
+<!-- Desktop Slider -->
+<div class="container hide-on-small-only">
+  <div class="marginspacer">
+  </div>
   <div class="row">
-    <div class="carousel carousel-slider center" data-indicators="true">
-    <div class="carousel-fixed-item center">
-      <!--
-      <a style="float: right; margin-right: calc(100% / 12);border-color: transparent;" class="waves-effect waves-teal btn-flat">more new about innit<div style="height:2px;background-color:#4cb935;position:absolute;bottom:0;opacity:0.2;width: 161px;"></div></a>
-    -->
+    <div class="carousel carousel-slider center" data-indicators="true" style="margin-right: auto; margin-left: auto;">
+    <div class="carousel-fixed-item center" style="width: 100%; z-index: 1;">
+      <a style="margin-right: calc(100% / 12);border-color: transparent; float: right; border-bottom: 1px solid rgba(76, 185, 53, .2)" class="waves-effect waves-teal btn-flat">more new about innit</a>
     </div>
     <div class="carousel-item white-text" href="#one!" style="background-color: #f2ece3;">
-      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 35px 0px 30px 25px;">Innit In The News</h2>
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 20px 0px 20px 25px;">Innit In The News</h2>
       <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
         <tr>
           <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;width: 33%;">
             <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
-            <p class="newstitle">{{ site.data.articles[-1].title }}</p>
+            <p class="newstitle">{{ site.data.articles[-1].blurb }}</p>
           </td>
           <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;width: 33%;"> 
             <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
-            <p class="newstitle">{{ site.data.articles[-2].title }}</p>
+            <p class="newstitle">{{ site.data.articles[-2].blurb }}</p>
           </td>
           <td style="padding: 0px 25px;table-layout: fixed;vertical-align: top; width: 33%;">
             <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
-            <p class="newstitle">{{ site.data.articles[-3].title }}</p>
+            <p class="newstitle">{{ site.data.articles[-3].blurb }}</p>
           </td>
         </tr>
         <tr>
@@ -298,39 +325,204 @@ layout: default
       </table>
     </div>
     <div class="carousel-item white-text" href="#two!" style="background-color: #f2ece3;">
-      <h2>Second Panel</h2>
-      <p class="white-text">This is your second panel</p>
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 35px 0px 30px 25px;">Innit In The News</h2>
+      <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
+        <tr>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;width: 33%;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-4].blurb }}</p>
+          </td>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;width: 33%;"> 
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-5].blurb }}</p>
+          </td>
+          <td style="padding: 0px 25px;table-layout: fixed;vertical-align: top; width: 33%;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-6].blurb }}</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%;min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-4].logo }}" style="width:100%; max-width: 70px;">
+            </div>
+          </td>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%; min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-5].logo }}" style="width:100%; max-width: 70px;">
+            </div>
+          </td>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%; min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-6].logo }}" style="width:100%: max-width: 70px;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
     </div>
   </div>
-  </div>      
 </div>
+<!-- Mobile Slider -->
+<div class="container hide-on-med-and-up">
+  <div class="marginspacer">
+  </div>
+  <div class="row">
+    <div class="carousel carousel-slider center" data-indicators="true" style="margin-right: auto; margin-left: auto;">
+    <div class="carousel-fixed-item center" style="width: 100%; z-index: 1;">
+      <a style="margin-right: calc(100% / 12);border-color: transparent; float: right; border-bottom: 1px solid rgba(76, 185, 53, .2); margin-bottom: 35px;" class="waves-effect waves-teal btn-flat">more new about innit</a>
+    </div>
+    <div class="carousel-item white-text" href="#one" style="background-color: #f2ece3;">
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 20px 0px 20px 25px;">Innit In The News</h2>
+      <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
+        <tr>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-1].blurb }}</p>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%;min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-1].logo }}" style="width:100%;min-width: 70px;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+       <div class="carousel-item white-text" href="#two" style="background-color: #f2ece3;">
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 20px 0px 20px 25px;">Innit In The News</h2>
+      <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
+        <tr>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-2].blurb }}</p>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%;min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-2].logo }}" style="width:100%;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+        <div class="carousel-item white-text" href="#three" style="background-color: #f2ece3;">
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 20px 0px 20px 25px;">Innit In The News</h2>
+      <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
+        <tr>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-3].blurb }}</p>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%;min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-3].logo }}" style="width:100%;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+        <div class="carousel-item white-text" href="#four" style="background-color: #f2ece3;">
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 20px 0px 20px 25px;">Innit In The News</h2>
+      <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
+        <tr>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-4].blurb }}</p>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%;min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-4].logo }}" style="width:100%;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+        <div class="carousel-item white-text" href="#five" style="background-color: #f2ece3;">
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 20px 0px 20px 25px;">Innit In The News</h2>
+      <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
+        <tr>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-5].blurb }}</p>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%;min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-5].logo }}" style="width:100%;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+        <div class="carousel-item white-text" href="#six" style="background-color: #f2ece3;">
+      <h2 style="float: left;margin-left: calc(100% / 12);color: #212121; font-weight: 800;font-size: 30px;padding: 20px 0px 20px 25px;">Innit In The News</h2>
+      <table style="width: calc(100% / 6 * 5); margin-left: auto; margin-right: auto; padding: 15px 0px 15px 0px;">
+        <tr>
+          <td style="padding: 0px 25px;table-layout: fixed; vertical-align: top;">
+            <img src="{{ site.url }}/assets/images/homepage/quote-mark.svg">
+            <p class="newstitle">{{ site.data.articles[-6].blurb }}</p>
+        </tr>
+        <tr>
+          <td style="vertical-align: middle;padding: 0px 25px; text-align:left;">
+            <div style="width: 40%;min-width: 100px;">
+            <img src="{{ site.url }}{{ site.data.articles[-6].logo }}" style="width:100%;">
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    </div>
+  </div>
 </div>
 <!-- Bottom CTA: Scrolling Pages -->
-<div class="marginspacer">
-  <div class="row no-pad-bot">
-    <div class="col s10 m10 offset-s1 offset-m1">
-      <h4 class="subheader">Love Your Dinner</h4>
-      <h3>Let Us Be Your Answer To "What's for Dinner?"</h3>
-      <p class="body">Many of our easy everday meals go from start to finish in about 30 minutes.</p>
-      <a class="waves-effect waves-light btn-large hide-on-small-only">Download Free App</a>
-    </div>
-    <div id="containertest">    
-      <div class="photobanner">
-        <img class="first scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-SpicyLimeBasil_UY0A0067.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-ItalianSunDriedTomato_UY0A0145.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-SpicyLimeBasil_UY0A0067.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-ItalianSunDriedTomato_UY0A0145.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
-        <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
+<div class="container">
+  <div class="marginspacer">
+    <div class="row no-pad-bot">
+      <div class="col s10 m10 offset-s1 offset-m1">
+        <h4 class="subheader">Love Your Dinner</h4>
+        <h3>Let Us Be Your Answer To "What's for Dinner?"</h3>
+        <p class="body">Many of our easy everday meals go from start to finish in about 30 minutes.</p>
+        <a class="waves-effect waves-light btn-large hide-on-small-only modal-trigger" href="#modal1">Download Free App</a>
+      </div>
+      <div id="containertest">    
+        <div class="photobanner">
+          <img class="first scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-SpicyLimeBasil_UY0A0067.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-ItalianSunDriedTomato_UY0A0145.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-SpicyLimeBasil_UY0A0067.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/homepage-plate-ItalianSunDriedTomato_UY0A0145.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-SpicyKorean_chickBS_taco_9941.png" alt="" />
+          <img class="scrollingimage" src="{{ site.url }}/assets/images/homepage/hompage-plate-MexicanFajitas_PORK_SWEETPOTS_8198.png" alt="" />
+        </div>
+      </div>
+      <div class="col s12 m10 offset-m1 hide-on-med-and-up" style="text-align: center;">
+        <div class="marginspacer">
+          <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1" style="display: inline-block;width: 90%;max-width: 400px;">Download Free App</a>
+        </div>
       </div>
     </div>
-    <div class="col s12 m10 offset-m1 hide-on-med-and-up" style="text-align: center;">
-      <div class="marginspacer">
-        <a class="waves-effect waves-light btn-large" style="display: inline-block;width: 90%;max-width: 400px;">Download Free App</a>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <div class="modalflex" style="display: flex;">
+      <div class="modalphotoholder" style="flex: 1 1 auto; height: 20vh;">
+        <img class="responsive-img" src="{{ site.url }}/assets/images/modal/modul-cutting-image.jpg" alt="">
+      </div>
+      <div class="modaltextholder" style="flex: 1 1 auto;">
+        <form onsubmit="sendSMS(this); return false;">
+            <input id="phone" name="phone" type="tel" placeholder="(650) 123-4567">
+            <br/>
+            <input class="modal-close" type="submit">
+        </form>
       </div>
     </div>
   </div>

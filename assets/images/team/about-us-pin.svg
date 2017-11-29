@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="38px" viewBox="0 0 27 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>location</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="innit-team-executives" transform="translate(-116.000000, -2365.000000)">
+            <g id="location" transform="translate(116.000000, 2090.000000)">
+                <g transform="translate(0.000000, 275.000000)">
+                    <path d="M13.5,37.6 C22.5,26.9438961 27,19.1305627 27,14.16 C27,6.70415588 20.9558441,0.66 13.5,0.66 C6.04415588,0.66 0,6.70415588 0,14.16 C0,19.1305627 4.5,26.9438961 13.5,37.6 Z" id="Oval" fill="#4DB935"></path>
+                    <circle id="Oval-3" fill="#FFFFFF" cx="13.5" cy="14.5" r="4.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

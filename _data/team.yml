@@ -1,3 +1,27 @@
-- name:
-  title:
-  bio: 
+- name: Alan Davis
+  imageA: /assets/images/team/team/Alan_Davis_A.png
+  imageB: /assets/images/team/team/Alan_Davis_B.png
+
+- name: David Weng
+  imageA: /assets/images/team/team/David_Weng_A.png
+  imageB: /assets/images/team/team/David_Weng_B.png
+
+- name: Diego Bravo
+  imageA: /assets/images/team/team/Diego_Bravo_A.png
+  imageB: /assets/images/team/team/Diego_Bravo_B.png
+
+- name: Karen Chao
+  imageA: /assets/images/team/team/Karen_Chao_A.png
+  imageB: /assets/images/team/team/Karen_Chao_B.png
+
+- name: Kevin Slattery 
+  imageA: /assets/images/team/team/Kevin_Slattery_A.png
+  imageB: /assets/images/team/team/Kevin_Slattery_B.png
+
+- name: Shyam Ashok
+  imageA: /assets/images/team/team/Shyam_Ashok_A.png
+  imageB: /assets/images/team/team/Shyam_Ashok_B.png
+
+- name: Uzair Hussain
+  imageA: /assets/images/team/team/Uzair_Hussain_A.png
+  imageB: /assets/images/team/team/Uzair_Hussain_B.png

@@ -36,10 +36,10 @@
 // ==========================================================================
 
 $primary-color: #2f2f2f !default;
-$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-light: #4b4b4b !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
-$secondary-color: color("teal", "lighten-1") !default;
+$secondary-color: #2f2f2f !default;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: #4cb935 !default;
@@ -102,9 +102,9 @@ $card-link-color-light: lighten($card-link-color, 20%) !default;
 // 5. Carousel
 // ==========================================================================
 
-$carousel-height: 400px !default;
+$carousel-height: 450px !default;
 $carousel-item-height: $carousel-height / 2 !default;
-$carousel-item-width: $carousel-item-height !default;
+$carousel-item-width: 100% !default;
 
 
 // 6. Collapsible
@@ -167,18 +167,18 @@ $input-border: none !default;
 $input-background: #fff !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
-$input-focus-color: $secondary-color !default;
+$input-focus-color: #f9f9f9 !default;
 $input-font-size: 1rem !default;
 $input-margin-bottom: 20px;
 $input-margin: 0 0 $input-margin-bottom 0 !default;
-$input-padding: 0 !default;
+$input-padding: 0 0 0 10px !default;
 $input-transition: all .3s !default;
-$label-font-size: .8rem !default;
+$label-font-size: 1rem !default;
 $input-disabled-color: rgba(0,0,0, .42) !default;
 $input-disabled-solid-color: #949494 !default;
 $input-disabled-border: 1px dotted $input-disabled-color !default;
 $input-invalid-border: 1px solid $input-error-color !default;
-$placeholder-text-color: lighten($input-border-color, 20%) !default;
+$placeholder-text-color: #4b4b4b !default;
 
 // Radio Buttons
 $radio-fill-color: $secondary-color !default;
@@ -192,7 +192,7 @@ $track-height: 3px !default;
 
 // Select
 $select-border: 1px solid #f2f2f2 !default;
-$select-background: rgba(255, 255, 255, 0.90) !default;
+$select-background: #f9f9f9 !default;
 $select-focus: 1px solid lighten($secondary-color, 47%) !default;
 $select-option-hover: rgba(0,0,0,.06) !default;
 $select-option-focus: rgba(0,0,0,.03) !default;
@@ -215,7 +215,7 @@ $switch-radius: 15px !default;
 $small-screen-up: 801px !default;
 $medium-screen-up: 1025px !default;
 $large-screen-up: 1201px !default;
-$small-screen: 800px !default;
+$small-screen: 801px !default;
 $medium-screen: 1024px !default;
 $large-screen: 1200px !default;
 
@@ -275,9 +275,9 @@ $spinner-default-color: $secondary-color !default;
 // 18. Tabs
 // ==========================================================================
 
-$tabs-underline-color: $primary-color-light !default;
+$tabs-underline-color: #fd6225 !default;
 $tabs-text-color: $primary-color !default;
-$tabs-bg-color: #fff !default;
+$tabs-bg-color: #f9f9f9 !default;
 
 
 // 19. Tables
@@ -301,18 +301,37 @@ $toast-action-color: #eeff41;
 
 $off-black: #2f2f2f !default;
 // Header Styles
+// Mobile 600px and Below
+$h1-fontsize-mobile: 2.5rem !default;
+$h2-fontsize-mobile: 1.2rem !default;
+$h3-fontsize-mobile: 2.2rem !default;
+$h4-fontsize-mobile: 0.9rem !default;
+$h5-fontsize-mobile: 1.5rem !default;
+$h6-fontsize-mobile: 1rem !default;
+
+// Tablet 600 - 800 px
+$h1-fontsize-tablet: 2.5rem !default;
+$h2-fontsize-tablet: 1.2rem !default;
+$h3-fontsize-tablet: 2.1rem !default;
+$h4-fontsize-tablet: 0.9rem !default;
+$h5-fontsize-tablet: 1.5rem !default;
+$h6-fontsize-tablet: 1rem !default;
+
+// Landscape 800 - 1024 px
+$h1-fontsize-landscape: 2.6rem !default;
+$h2-fontsize-landscape: 1.2rem !default;
+$h3-fontsize-landscape: 1.75rem !default;
+$h4-fontsize-landscape: 0.85rem !default;
+$h5-fontsize-landscape: 1.5rem !default;
+$h6-fontsize-landscape: 1rem !default;
+
+// Desktop 1024+ px
 $h1-fontsize: 2.6rem !default;
 $h2-fontsize: 1.2rem !default;
 $h3-fontsize: 1.75rem !default;
-$h4-fontsize: 0.65rem !default;
-$h5-fontsize: 1.6rem !default;
+$h4-fontsize: 0.85rem !default;
+$h5-fontsize: 1.4rem !default;
 $h6-fontsize: 1rem !default;
-$h1-fontsize-mobile: 2.5rem !default;
-$h2-fontsize-mobile: 1.2rem !default;
-$h3-fontsize-mobile: 2.095rem !default;
-$h4-fontsize-mobile: 0.952rem !default;
-$h5-fontsize-mobile: 1.5rem !default;
-$h6-fontsize-mobile: 1rem !default;
 
 
 // 22. Footer
